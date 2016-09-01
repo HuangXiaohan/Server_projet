@@ -2,14 +2,13 @@
 <results>
 Checking myClient.c...
 <error file="myClient.c" line="26" id="obsoleteFunctionsgethostbyname" severity="style" msg="Found obsolete function 'gethostbyname'. It is recommended that new applications use the 'getaddrinfo' function"/>
-<error file="myClient.c" line="36" id="obsoleteFunctionsbzero" severity="style" msg="Found obsolete function 'bzero'. It is recommended that new applications use the 'memset' function"/>
 1/30 files checked 4% done
 Checking myServer.c...
-<error file="myServer.c" line="47" id="variableScope" severity="style" msg="The scope of the variable 'i' can be reduced"/>
-<error file="myServer.c" line="22" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
-<error file="myServer.c" line="64" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
-<error file="myServer.c" line="82" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
-<error file="myServer.c" line="42" id="resourceLeak" severity="error" msg="Resource leak: file1"/>
+<error file="myServer.c" line="48" id="variableScope" severity="style" msg="The scope of the variable 'i' can be reduced"/>
+<error file="myServer.c" line="23" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
+<error file="myServer.c" line="65" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
+<error file="myServer.c" line="83" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
+<error file="myServer.c" line="43" id="resourceLeak" severity="error" msg="Resource leak: file1"/>
 2/30 files checked 10% done
 Checking serverMain.c...
 3/30 files checked 13% done
@@ -37,23 +36,22 @@ Checking ../Server/serverTest.c...
 8/30 files checked 33% done
 Checking ../Server_projet/myClient.c...
 <error file="../Server_projet/myClient.c" line="26" id="obsoleteFunctionsgethostbyname" severity="style" msg="Found obsolete function 'gethostbyname'. It is recommended that new applications use the 'getaddrinfo' function"/>
-<error file="../Server_projet/myClient.c" line="36" id="obsoleteFunctionsbzero" severity="style" msg="Found obsolete function 'bzero'. It is recommended that new applications use the 'memset' function"/>
 9/30 files checked 37% done
 Checking ../Server_projet/myServer.c...
-<error file="../Server_projet/myServer.c" line="47" id="variableScope" severity="style" msg="The scope of the variable 'i' can be reduced"/>
-<error file="../Server_projet/myServer.c" line="22" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
-<error file="../Server_projet/myServer.c" line="64" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
-<error file="../Server_projet/myServer.c" line="82" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
-<error file="../Server_projet/myServer.c" line="42" id="resourceLeak" severity="error" msg="Resource leak: file1"/>
+<error file="../Server_projet/myServer.c" line="48" id="variableScope" severity="style" msg="The scope of the variable 'i' can be reduced"/>
+<error file="../Server_projet/myServer.c" line="23" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
+<error file="../Server_projet/myServer.c" line="65" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
+<error file="../Server_projet/myServer.c" line="83" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
+<error file="../Server_projet/myServer.c" line="43" id="resourceLeak" severity="error" msg="Resource leak: file1"/>
 10/30 files checked 44% done
 Checking ../Server_projet/serverMain.c...
 11/30 files checked 47% done
 Checking ../Server_projet/serverTest.c...
 <error file="../Server_projet/serverTest.c" line="20" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
 <error file="../Server_projet/serverTest.c" line="39" id="bufferAccessOutOfBounds" severity="error" msg="Buffer access out-of-bounds"/>
-12/30 files checked 49% done
+12/30 files checked 50% done
 Checking ../c-sonar-runner/src/main.c...
-13/30 files checked 50% done
+13/30 files checked 51% done
 Checking ../cunit/CUnitRunTest.c...
 14/30 files checked 53% done
 Checking ../cunit/MainModule.c...
@@ -63,9 +61,9 @@ Checking ../cunit/TestMainModule.c...
 Checking ../server.c...
 <error file="../server.c" line="47" id="variableHidingTypedef" severity="style" msg="Struct 'sockaddr_in' hides typedef with same name"/>
 <error file="../server.c" line="414" id="resourceLeak" severity="error" msg="Resource leak: sfp"/>
-17/30 files checked 73% done
+17/30 files checked 74% done
 Checking ../socket_demo.c...
-18/30 files checked 79% done
+18/30 files checked 80% done
 Checking ../sonar-examples-master/projects/languages/c/c-sonar-runner/src/main.c...
 19/30 files checked 81% done
 Checking ../sonar-examples-master/projects/languages/cpp/cpp-sonar-runner-bullseye/example.c...

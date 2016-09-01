@@ -33,7 +33,7 @@ int main(int argc,char *argv[]) {
         exit(1);  
     }  
       
-    bzero(&server,sizeof(server));  
+    
     server.sin_family =AF_INET;  
     server.sin_port=htons(PORT);  
     server.sin_addr= *((struct in_addr *)he->h_addr);  

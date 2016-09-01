@@ -16,16 +16,17 @@ int main(int argc,char *argv[]) {
     int  len;  
     
 
-    /**créer un socket de TCP*/
+    /**creat a socket of TCP*/
     if ((listenfd =socket(AF_INET, SOCK_STREAM, 0)) == -1) {  
         perror("Creatingsocket failed.");  
         exit(1);  
     }  
     
-
+    /**define the property of server*/
     server.sin_family=AF_INET;  
     server.sin_port=htons(PORT);  
     server.sin_addr.s_addr= htonl (INADDR_ANY);  
+
 
     if (bind(listenfd,(struct sockaddr *)&server, sizeof(server)) == -1) {  
         perror("Bind()error.");  

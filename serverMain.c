@@ -14,15 +14,14 @@ int main(int argc,char *argv[]) {
     struct  sockaddr_in  server;  
     struct sockaddr_in  client;  
     int  len;  
-      
+    
+
+    /**créer un socket de TCP*/
     if ((listenfd =socket(AF_INET, SOCK_STREAM, 0)) == -1) {  
         perror("Creatingsocket failed.");  
         exit(1);  
     }  
-      
-    int opt =SO_REUSEADDR;  
-    setsockopt(listenfd,SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));    
-    bzero(&server, sizeof(server));
+    
 
     server.sin_family=AF_INET;  
     server.sin_port=htons(PORT);  

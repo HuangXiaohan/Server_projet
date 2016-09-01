@@ -12,13 +12,16 @@ CFLAGS =-g -std=gnu99 -Wall
 # Cibles principales
 #------------------------------------------------------------------
 
-all: serverMain
+all: serverMain myClient
 
 serverMain: serverMain.o
 	$(CC) $(CFLAGS) -o serverMain serverMain.o
 
 serverMain.o: serverMain.c myServer.h
 	$(CC) $(CFLAGS) -c serverMain.c
+
+myClient: myClient.c
+	$(CC) $(CFLAGS) -o myClient myClient.c
 
 clean :
 	-rm *.o 

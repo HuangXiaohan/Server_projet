@@ -4,9 +4,9 @@ extern char **environ;
       
 #define PORT 8800 
 #define BACKLOG 5 
-#define MAXDATASIZE 1000
+//#define MAXDATASIZE 1000
 
-void process_cli(int  connfd, struct sockaddr_in client); 
+//void process_cli(int  connfd, struct sockaddr_in client); 
   
 int main(int argc,char *argv[]) {  
     int  listenfd, connfd;  
@@ -70,16 +70,3 @@ int main(int argc,char *argv[]) {
 
     return 0;
 } 
-
-
-void process_cli(int connfd, struct sockaddr_in client)  {
-    int num;
-    char recvbuf[100],sendbuf[100];
-    while (num = recv(connfd,recvbuf,MAXDATASIZE,0)){
-        recvbuf[num] = '\0';
-        printf("%s\n", recvbuf);
-        sendbuf = "hello client";
-        send(connfd,sendbuf,strlen(sendbuf),0);
-    }
-    close(connfd);
-}

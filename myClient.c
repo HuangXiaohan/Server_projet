@@ -55,7 +55,8 @@ int main(int argc,char *argv[]) {
 }  
       
 void process(FILE *fp, int  sockfd)  {  
-    char sendline[MAXDATASIZE]; 
+    char sendline[MAXDATASIZE],recvline[MAXDATASIZE]; 
+    int num;
 
     if (fgets(sendline, MAXDATASIZE, fp) == NULL) {  
         printf("\nExit.\n");  

@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+import os
+
+header = 'Content-Type:text/html\n\n'
+
+form = os.environ["QUERY_STRING"]
+nom = form.split("&")[0].split("=")[1]
+prenom = form.split("&")[1].split("=")[1]
+
+print "<html>"
+print "<head>"
+print "<title>Doc. Produit par un CGI</title>"
+print "</head>"
+print "<body>"
+print "<h1>Coucou %s %s" % (nom,prenom)
+print "</body>"
+print "</html>"

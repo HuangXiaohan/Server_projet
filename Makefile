@@ -14,11 +14,14 @@ CFLAGS =-g -std=gnu99 -Wall
 
 all: serverMain myClient
 
-serverMain: serverMain.o
-	$(CC) $(CFLAGS) -o serverMain serverMain.o
+serverMain: serverMain.o myServer.o
+	$(CC) $(CFLAGS) -o serverMain serverMain.o myServer.o
 
 serverMain.o: serverMain.c myServer.h
 	$(CC) $(CFLAGS) -c serverMain.c
+
+myServer.o: myServer.c myServer.h
+	$(CC) $(CFLAGS) -c myServer.c
 
 myClient: myClient.c
 	$(CC) $(CFLAGS) -o myClient myClient.c
